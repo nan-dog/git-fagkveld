@@ -1,14 +1,15 @@
-function calculate(number1Field, number2Field, operationField) {
+open function calculate(number1Field, number2Field, operationField) {
   var number1 = parseFloat(number1Field.value);
   var number2 = parseFloat(number2Field.value);
 
   switch (operationField.value) {
     case 'plus':
       return number1 + number2;
-
     case 'sin':
       return Math.sin(number1);
-
+    case 'minus':
+      return number1 - number2;
+      
     default:
       return NaN;
   }
